@@ -10,7 +10,7 @@ pipeline{
         stage("build stage"){
             
             steps{
-                bat "\"C:/Program Files/dotnet/dotnet.exe\" build \"${projectPath}\""
+                bat "\"C:/Program Files/dotnet/dotnet.exe\" build \"${workspace}/SampleApp\""
             }
         }
     }
